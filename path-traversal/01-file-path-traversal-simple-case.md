@@ -30,6 +30,8 @@ we have to open the image in a new tab i.e. here we get "https://0a74009e0414f8e
 here this part "/image?filename=5.jpg" loads the image from the file
 and also it gives us access to the image files which is all we need
 
+if the server had responded with "Error 404" that means the attack have failed and if it responds with a broken image or something else except error that means the attack has landed and now you have access.
+
 ## 3. Payload
 
 The "5.jpg" is replaced with the path traversal prompt which is "../../../etc/passwd"
