@@ -30,15 +30,15 @@ we have to open the image in a new tab i.e. here we get "https://0a74009e0414f8e
 here this part "/image?filename=5.jpg" loads the image from the file
 and also it gives us access to the image files which is all we need
 
-if the server had responded with "Error 404" that means the attack have failed and if it responds with a broken image or something else except error that means the attack has landed and now you have access.
+if the server had responded with "Error 404" or "500" that means the attack have failed and if it responds with a broken image which means the lab has been solved.
 
 ## 3. Payload
 
-The "5.jpg" is replaced with the path traversal prompt which is "../../../etc/passwd"
+The "5.jpg" is replaced with the path traversal prompt which is "https://0a74009e0414f8ec8129700d00ad004a.web-security-academy.net/image?filename=../../../etc/passwd"
 
 ## 4. Why it works
 
-The app takes the payload which is "../../../etc/passwd" from the URL and adds it to the folder images. When I sent "https://0a74009e0414f8ec8129700d00ad004a.web-security-academy.net/image?filename=../../../etc/passwd", it built the path to previous and then to them main directory which is root, and each ../ climbed one folder up until it reached the root directory. It works because the server it trusted that the server never checked where the finish path will land and it can be used by the user to get the access to the root directory.
+The app takes the payload which is "../../../etc/passwd" from the URL and adds it to the folder images. When I sent "https://0a74009e0414f8ec8129700d00ad004a.web-security-academy.net/image?filename=../../../etc/passwd", it built the path to previous and then to them root directory which is root, and each ../ climbed one folder up until it reached the root directory. It works because the server it trusted that the server never checked where the finish path will land and it can be used by the user to get the access to the root directory.
 
 ## 5. How to fix it
 
