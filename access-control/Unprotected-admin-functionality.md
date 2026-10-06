@@ -1,10 +1,11 @@
-#Lab: Unprotected admin functionality
+# Lab: Unprotected admin functionality
 
-**Vulnerability**
+## Vulnerability
 unprotected admin functionality
-**Level** 
+## Level 
 apprentice
-**Lab URL** "https://portswigger.net/web-security/learning-paths/server-side-vulnerabilities-apprentice/access-control-apprentice/access-control/lab-unprotected-admin-functionality#"
+##Lab URL 
+"https://portswigger.net/web-security/learning-paths/server-side-vulnerabilities-apprentice/access-control-apprentice/access-control/lab-unprotected-admin-functionality#"
 ---
 ## Objective 
 Delete an user 'carlos' by accessing the administrative panel
