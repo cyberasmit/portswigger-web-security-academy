@@ -1,0 +1,17 @@
+## Lab : Unprotected admin functionality with unpredictable URL
+
+-----
+## Objective 
+Delete user carlos after finding and accessing the admin panel access.
+
+## Analysis and Discovery
+1. Analyzed the whole application and there is no trails leading to admin.
+2. Decided to inspect.
+3. Inspected every tab on inspect and found the "Source" suspicious and also because finding nothing anywhere else.
+4. While scrolling through that found something like "/admin-ck2978".
+5. Used it and com[pleted the lab.
+
+## Exploitation 
+1. Do what mentioned before
+2. found something like that
+3. Delete user carlos
