@@ -12,8 +12,7 @@ Delete an user 'carlos' by accessing the administrative panel.
 ## Analysis & Discovery
 1.Accessed the lab and opened the inspection mode first and found nothing there.
 2.Decided to check the "robots.txt".
-3.found something interesting there 'User-agent: *.
-                                     Disallow: /administrator-panel'.
+3.found something interesting there "User-agent: *  Disallow: /administrator-panel".
 ## Exploitation steps
 1. see "/administrator-panel".
 2. replace "url/robots.txt" with "url/administrator-panel".
